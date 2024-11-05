@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
         #name{
             text-align: center;
             color: white;
@@ -18,7 +22,7 @@
             text-align: center;
         }
 
-        a{
+        .uplink-button{
           text-decoration: none;
           color: white;
         }
@@ -31,6 +35,41 @@
             margin-left: 10px;
         }
 
+        #section-second{
+            background-color: green;
+        }
+        #flexid{
+            display: flex;
+            margin: 20px;
+            margin-top: 0;
+        }
+        .abc{
+            width: 100%;
+        }
+        .list-link{
+            color: rgb(206, 206, 26);
+            font-size: 25px;
+            margin-left: 15px;
+        }
+        li{
+            margin-bottom: 15px;
+            color: white;
+            font-size: 25px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        ol{
+            margin-top: 30px;
+        }
+        #secondheading{
+            color: white;
+            font-size: 30px;
+        }
+        #loremtext{
+            color: white;
+            font-size: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -38,24 +77,31 @@
         <h1 id="name">SALMAN SAHED</h1>
     
         <div id="button">
-            <button class="up-button"> <a href=""> About Us </a> </button>
-            <button class="up-button"> <a href=""> Contact Us </a> </button>
-            <button class="up-button"> <a href=""> About Block </a> </button>
-            <button class="up-button"> <a href=""> Our Service </a> </button>
+            <button class="up-button"> <a class="uplink-button"> About Us </a> </button>
+            <button class="up-button"> <a class="uplink-button"> Contact Us </a> </button>
+            <button class="up-button"> <a class="uplink-button"> About Block </a> </button>
+            <button class="up-button"> <a class="uplink-button"> Our Service </a> </button>
             
         </div>
 
     </header>
 
 
-  <section>
-    <div>
-        <h1>This is a new website</h1>
-        <img src="image/360_F_610681083_M6XlAUkKj0I9ykA0Iz1ysOTCsNvpU5Vw.jpg" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis vitae alias expedita, natus itaque facere, distinctio ipsa at vel assumenda repellendus inventore iusto ullam repellat magni hic porro blanditiis!</p>
-    </div>
-    <div>
-
+  <section id="section-second">
+    <div id="flexid">
+        <div class="abc">
+            <h1 id="secondheading">This is a new website</h1>
+            <img src="image/360_F_610681083_M6XlAUkKj0I9ykA0Iz1ysOTCsNvpU5Vw.jpg" alt="">
+            <p id="loremtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias eaque blanditiis maxime tenetur distinctio nesciunt illum vitae maiores assumenda soluta eveniet id eligendi aperiam placeat, omnis, numquam fugit facilis ullam similique ad unde quas, obcaecati nisi. Animi consectetur, autem expedita, quam incidunt, neque distinctio tempore ipsa perspiciatis labore provident modi!</p>
+        </div>
+        <div class="abc">
+             <ol>
+                <li> <a href="" class="list-link"> Our new blog </a> </li>
+                <li> <a href="" class="list-link"> Next Page </a> </li>
+                <li> <a href="" class="list-link"> First Page </a> </li>
+                <li> <a href="" class="list-link"> Our Social Page </a> </li>
+             </ol>
+        </div>
     </div>
   </section>
 </body>
